@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>sky</title>
+</head>
+
+<body>
+    <div class="top_wrap">
+        <h1></h1>
+        <form class="ask_sky">
+            <input type="text" placeholder="who's sky?" required>
+        </form>
+
+        <button type="button">Leave a message</button>
+    </div>
+    <div class="write_letter_wrap hide">
+        <i class="fas fa-times fa-lg close"></i>
+        <form class="write_letter">
+            <div class="icon_wrap">
+                <i class="far fa-envelope fa-2x"></i>
+            </div>
+
+            <p>Leave a message everything you want to say </p>
+            <div class="content">
+                <textarea rows="5"></textarea>
+            </div>
+            <div class="ps">
+                <label for="ps1">Ps.</label>
+                <input type="text" id="ps1" placeholder="last word" required>
+            </div>
+            <div class="btn_wrap">
+                <button type="submit">shooting to sky</button>
+            </div>
+        </form>
+    </div>
+    <ul class="letters">
+
+    </ul>
+    <script src="skyname.js"></script>
+    <script src="writeLetter.js"></script>
+    <script src="background.js"></script>
+    <script src="common.js"></script>
+
+</body>
+
+</html>
