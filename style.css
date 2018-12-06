@@ -41,12 +41,25 @@ body {
     font-weight: 100;
 }
 
+.top_wrap .ask_sky input {
+    border: 0;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    margin: 20px 0 0 10px;
+    padding-left: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+
 button {
     border: 1px solid #fff;
     padding: 10px 20px;
     background-color: rgba( 255, 255, 255, 0);
     color: white;
     font-family: 'Noto Sans KR', sans-serif !important;
+    margin: 0 auto;
 }
 
 button:hover {
@@ -156,4 +169,65 @@ button:hover {
     cursor: pointer;
     float: right;
     color: white;
+}
+
+
+/*test*/
+
+.oneletter {
+    width: 200px;
+}
+
+.star_group {}
+
+.star_group .star {
+    text-align: center;
+    color: #f1c40f;
+}
+
+.star_group span {
+    font-size: 12px;
+    color: #bdc3c7;
+    display: block;
+    text-align: center;
+}
+
+.star_group .star_ps {
+    color: #e67e22;
+}
+
+.show_box {
+    float: left;
+    list-style: none;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0 15px 10px 15px;
+    overflow: hidden;
+    margin: 20px 10px;
+}
+
+.show_box .show_close {
+    display: inline-block;
+    padding: 5px 5px;
+    cursor: pointer;
+    float: right;
+    color: white;
+}
+
+.show_box span {
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+.show_box .show_date {}
+
+.show_box .ps {}
+
+.show_box .show_content {
+    font-size: 14px;
+    background-color: rgba( 255, 255, 255, 0.1);
+    padding: 10px 15px;
+    margin: 30px 0 0 0;
 }
