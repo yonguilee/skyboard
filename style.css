@@ -174,8 +174,17 @@ button:hover {
 
 /*test*/
 
+.manyletters {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
 .oneletter {
     width: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .star_group {}
