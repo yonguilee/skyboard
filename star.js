@@ -5,19 +5,22 @@ const ps = document.querySelector(".ps input");
 const manyLetters = document.querySelector(".manyletters");
 const letter = document.querySelector(".oneletter");
 
-const starGroup = document.querySelector(".star_group");
-const starDate = document.querySelector(".star_date");
-const starPs = document.querySelector(".star_ps");
+// const starGroup = document.querySelector(".star_group");
+// const starDate = document.querySelector(".star_date");
+// const starPs = document.querySelector(".star_ps");
 
-const letterShowbox = document.querySelector(".show_box");
+// const letterShowbox = document.querySelector(".show_box");
 
-const showDate = document.querySelector(".show_date");
-const showContent = document.querySelector(".show_content");
-const showPs = document.querySelector(".show_ps");
+// const showDate = document.querySelector(".show_date");
+// const showContent = document.querySelector(".show_content");
+// const showPs = document.querySelector(".show_ps");
 
 const LETTERS_LS = 'letters';
 let letters = [];
 
+
+
+/* delete letter*/
 function deleteLetter() {
     console.log(event);
     console.dir(event.target.parentNode.parentNode.parentNode);
@@ -33,6 +36,7 @@ function deleteLetter() {
     saveLetter();
 }
 
+/* save to the localstorage */
 function saveLetter() {
     localStorage.setItem(LETTERS_LS, JSON.stringify(letters));
 }
@@ -48,7 +52,7 @@ function showLetter(a, b, c) {
             <span class="star_date">${c}</span>
             <span class="star_ps">ps. ${b}</span>
         </div>
-        <div class="show_box">
+        <div class="show_box hide">
             <div class="show_close"><i class="far fa-trash-alt"></i>
             </div>
             <span class="show_date">${c}</span>
@@ -58,8 +62,6 @@ function showLetter(a, b, c) {
     </div>
 
     `
-        //oneletter.id = newId;
-
     manyLetters.innerHTML += oneletter;
     const letterDelete = document.querySelector(".show_close");
     letterDelete.addEventListener("click", deleteLetter);
@@ -75,6 +77,7 @@ function showLetter(a, b, c) {
 
 }
 
+/* get the writing date */
 function getDate() {
     const date = new Date();
     return writeDate = Date.now();
