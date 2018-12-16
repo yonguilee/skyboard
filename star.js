@@ -44,12 +44,12 @@ function saveLetter() {
 function showLetter(a, b, c) {
 
     const newId = letters.length + 1;
-
+    // <span class="star_date">${moment(c).format('YYYY.M.D')}</span>
     const oneletter = `
     <div class="oneletter" id="${newId}">
         <div class="star_group">
             <div class="star"><i class="fas fa-star"></i></div>
-            <span class="star_date">${c}</span>
+            <span class="star_date">${c}</span>         
             <span class="star_ps">ps. ${b}</span>
         </div>
         <div class="show_box hide">
@@ -80,8 +80,12 @@ function showLetter(a, b, c) {
 /* get the writing date */
 function getDate() {
     const date = new Date();
-    return writeDate = Date.now();
+    writeY = date.getFullYear();
+    writeM = date.getMonth();
+    writeD = date.getDate();
+    return writeDate = writeY + '.' + writeM + '.' + writeD;
 }
+
 
 function handleSubmit(event) {
     event.preventDefault();
